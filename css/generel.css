@@ -1,0 +1,84 @@
+/*GENERELLE REGLER FOR TEKST + VARIABLER*/
+* {
+  margin: 0%;
+  box-sizing: border-box;
+}
+
+h1 {
+  font-family: "Playfair Display SC", serif;
+  color: black;
+  font-size: 3.5rem;
+}
+
+h2 {
+  font-family: "Roboto", sans-serif;
+  color: var(--primary-color);
+  font-weight: 500;
+  margin-top: var(--space-xl);
+  margin-bottom: var(--space-md);
+}
+
+p {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  line-height: 1.4rem;
+}
+
+img {
+  max-width: 100%;
+}
+
+/*COSTUM VARIABLER*/
+html {
+  --primary-color: #ff7530;
+  --space-xxs: 0.25rem;
+  --space-xs: 0.5rem;
+  --space-sm: 1rem;
+  --space-md: 1.5rem;
+  --space-l: 2rem;
+  --space-xl: 3rem;
+  --space-xxl: 4.5rem;
+}
+
+body {
+  background-color: #dbd5c9;
+  margin: 2rem;
+}
+
+/*NAVIGARTION*/
+header {
+  display: flex;
+  flex-flow: wrap;
+  justify-content: space-between;
+  align-items: center;
+  /* position: fixed; */
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+
+nav a {
+  text-decoration: none;
+  color: black;
+  font-family: "Roboto", sans-serif;
+}
+
+nav li {
+  list-style: none;
+  display: inline-block;
+}
+
+.logo {
+  color: black;
+  text-decoration: none;
+  list-style: none;
+  font-size: 3rem;
+}
+
+/*FOOTER*/
+.footer {
+  text-align: center;
+  position: sticky;
+  top: 100vh;
+  margin-top: 1.4rem;
+}

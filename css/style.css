@@ -1,0 +1,96 @@
+/*---------------MOBILEFIRST---------------*/
+
+/*FORSIDE*/
+
+/*OMMIG*/
+.h1_topmargin {
+  margin-top: 2rem;
+}
+
+.citat {
+  margin-block: 2rem;
+  text-align: center;
+  font-style: italic;
+  font-weight: 400;
+}
+
+@media (max-width: 700px) {
+  .img_place {
+    margin-left: -4rem;
+  }
+}
+
+.p_topmargin {
+  margin-top: 1rem;
+}
+
+.p_top_buttom_margin {
+  margin-top: 0.6rem;
+  margin-bottom: 2.5rem;
+}
+
+.grid_2col_ommig {
+  display: grid;
+  grid-template-columns: 3.5fr 1fr;
+  column-gap: 50px;
+}
+
+.border {
+  border-right: 1px solid black;
+}
+
+.erhvervserfaring_left {
+  text-align: end;
+}
+
+.sort_h2 {
+  color: black;
+  margin-bottom: 0rem;
+}
+
+/*---------------MOBILEFIRST SLUUUUT---------------*/
+
+/*---------------DESKTOP---------------*/
+/*
+@media (min-width: 700px) {
+  .grid_2col_sec1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .img_place1 {
+    grid-column: 1;
+    grid-row: 1;
+    width: 50%;
+    margin-left: 7rem;
+    margin-top: 4rem;
+  }
+  .tekst1_ommig {
+    grid-column: 2;
+    grid-row: 1;
+  }
+  .tekst2_ommig {
+    grid-column: 2;
+    grid-row: 1;
+    margin-top: 16rem;
+  }
+}
+*/
+
+/*nederste sektioner med uddannelse, erhverv og kontakt*/
+@media (min-width: 700px) {
+  .grid_col2_ommig_desk {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 2rem;
+    margin-inline: 5rem;
+    gap: 20px;
+  }
+  .uddannelse_desktop {
+    font-size: 4rem;
+  }
+
+  .grid_2col_ommig {
+    margin-top: 3.5rem;
+    font-size: 1.2rem;
+  }
+}
