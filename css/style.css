@@ -1,6 +1,12 @@
 /*---------------MOBILEFIRST---------------*/
-
-/*FORSIDE*/
+@media (max-width: 550px) {
+  .splash {
+    padding-top: 6rem;
+  }
+  footer {
+    margin-top: 8rem;
+  }
+}
 
 /*OMMIG*/
 .h1_topmargin {
@@ -51,7 +57,38 @@
 
 /*---------------DESKTOP---------------*/
 
-/*første sektion med billede og lille tekst, citat osv*/
+/*FORSIDE*/
+
+.splash {
+  display: grid;
+  place-content: center;
+  margin-top: 2rem;
+}
+.knap_forside {
+  font-size: 0.9rem;
+  background-color: none;
+  border: solid 1px black;
+  padding: 0.2rem 1.2rem;
+  padding-top: 0.3rem;
+  color: black;
+  text-decoration: none;
+}
+
+.knap_grid {
+  display: grid;
+  place-content: center;
+  margin-block: 2rem;
+}
+
+.knap_forside:hover {
+  background-color: #ff7530;
+  font-size: 1.4rem;
+  color: #dbd5c9;
+  border: solid 1px #dbd5c9;
+}
+
+/* OM MIG
+første sektion med billede og lille tekst, citat osv*/
 
 @media (min-width: 800px) {
   .grid_2col_sec1 {
