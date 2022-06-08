@@ -46,13 +46,13 @@ body {
 }
 
 /*NAVIGARTION*/
-header {
+/* header {
   display: flex;
   flex-flow: wrap;
   justify-content: space-between;
   align-items: center;
   /* position: fixed; */
-  width: 100%;
+/* width: 100%;
   top: 0;
   left: 0;
 }
@@ -73,10 +73,83 @@ nav li {
   text-decoration: none;
   list-style: none;
   font-size: 3rem;
+} */
+/* */
+
+/* header */
+.banner {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  flex-flow: wrap;
 }
 
+.main-menu {
+  font-family: "Roboto", sans-serif;
+}
+
+.main-menu ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  gap: 20px;
+  transition: background-color 0.5s ease;
+}
+
+.banner a {
+  text-decoration: none;
+  color: #000;
+}
+
+.main-menu a:hover {
+  border-bottom: 2px solid orange;
+}
+
+.logo {
+  font-family: "Playfair Display SC", serif;
+  font-size: 2rem;
+}
+
+/* burgermenu */
+.toggle-btn {
+  background: transparent;
+  border: none;
+  min-width: 44px;
+  min-height: 44px;
+  font-size: 1rem;
+  cursor: pointer;
+
+  display: none; /* Skjul knappen som standard */
+}
+
+@media (max-width: 600px) {
+  .toggle-btn {
+    display: block; /* Vis knappen, når viewporten maksimalt er 600px */
+  }
+
+  .main-menu {
+    display: contents; /* Fjern ".main-menu"-boksen fra ligningen, når viewporten maksimalt er 600px, men behold børnene, så disse deltager i flex-kontekten */
+  }
+
+  .main-menu ul {
+    display: none; /* Fjern menu-listen som standard */
+  }
+
+  .main-menu.shown ul {
+    /* Vis menu-listen, når klassen ".shown" er til stede */
+    border-top: 1px solid #000;
+    padding-top: 1rem;
+    display: flex;
+    flex: 1 1 100%;
+    flex-flow: column;
+    text-align: end;
+  }
+}
+Skriv til Alberte Jasmin Nielsen
+
+
 /*FOOTER*/
-.footer {
+footer p {
   text-align: center;
   position: sticky;
   top: 100vh;
