@@ -18,10 +18,18 @@ h2 {
   margin-bottom: var(--space-md);
 }
 
+h3 {
+  font-family: "Playfair Display SC", serif;
+  font-size: 1.6rem;
+
+  margin-top: -1.6rem;
+}
+
 p {
   font-family: "Roboto", sans-serif;
   font-weight: 300;
   line-height: 1.4rem;
+  max-width: 60ch;
 }
 
 img {

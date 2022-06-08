@@ -136,3 +136,101 @@ første sektion med billede og lille tekst, citat osv*/
     font-size: 1.2rem;
   }
 }
+
+/*----------------PROJEKTER---------------*/
+.h1_projekter {
+  padding-block: 1.5rem;
+}
+@media (min-width: 750px) {
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    margin-top: 40px;
+    padding-inline: 120px;
+    padding-bottom: 2rem;
+    gap: 20px;
+  }
+  .h1_projekter {
+    padding: 2rem 0rem 0rem 7.4rem;
+  }
+}
+
+.img_wrapper {
+  position: relative;
+  overflow: hidden;
+}
+
+.img_wrapper > img {
+  /* display: block; */
+  width: 100%;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+  object-position: center;
+}
+
+.img_wrapper > .content {
+  position: absolute;
+  inset: 0;
+  padding: 2rem;
+  padding-top: 5rem;
+  background: rgba(8, 11, 70, 0.7);
+  /*display: flex;*/
+  text-align: center;
+}
+
+.img_wrapper > img,
+.img_wrapper > .content {
+  transition: 200ms ease-in-out;
+}
+
+.img_wrapper > .content.fade {
+  opacity: 0;
+}
+
+.img_wrapper:hover > .content.fade {
+  opacity: 1;
+}
+
+a {
+  text-decoration: none;
+  color: var(--primary-color);
+  font-size: 1.2rem;
+}
+
+.hover_h2 {
+  font-size: 4rem;
+}
+
+.hover_h2:hover {
+  font-size: 6rem;
+}
+
+/*---------------TEMAEEEERRR---------------*/
+
+/*TEMA 2 - desktop*/
+
+@media (min-width: 800px) {
+  .tema2_1section_2col {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    gap: 40px;
+  }
+
+  .tema_overskrift {
+    text-align: end;
+  }
+
+  .temabeskrivelse {
+    margin-top: 9rem;
+    padding-inline: 2rem;
+  }
+}
+
+.tema_stort_tal {
+  font-size: 17rem;
+  color: var(--primary-color);
+}
+
+.tema_overskrift {
+  margin-bottom: 1rem;
+}
