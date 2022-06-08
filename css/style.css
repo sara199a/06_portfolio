@@ -76,8 +76,15 @@
 
 .knap_grid {
   display: grid;
-  place-content: center;
-  margin-block: 2rem;
+  place-content: end;
+  margin-block: 1rem;
+  padding-inline: 0.6rem;
+}
+
+@media (min-width: 800px) {
+  .knap_grid {
+    padding-inline: 7rem;
+  }
 }
 
 .knap_forside:hover {
