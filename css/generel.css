@@ -30,6 +30,7 @@ p {
   font-weight: 300;
   line-height: 1.4rem;
   max-width: 60ch;
+  margin-bottom: var(--space-xs);
 }
 
 img {
@@ -40,7 +41,7 @@ img {
 html {
   --primary-color: #ff7530;
   --space-xxs: 0.25rem;
-  --space-xs: 0.5rem;
+  --space-xs: 0.8rem;
   --space-sm: 1rem;
   --space-md: 1.5rem;
   --space-l: 2rem;
@@ -153,8 +154,6 @@ nav li {
     text-align: end;
   }
 }
-Skriv til Alberte Jasmin Nielsen
-
 
 /*FOOTER*/
 footer p {

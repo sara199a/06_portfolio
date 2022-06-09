@@ -49,10 +49,6 @@
   margin-bottom: 0rem;
 }
 
-.tekst_ommig {
-  max-width: 65ch;
-}
-
 /*---------------MOBILEFIRST SLUUUUT---------------*/
 
 /*---------------DESKTOP---------------*/
@@ -217,10 +213,10 @@ a {
 /*TEMA 2 - desktop*/
 
 @media (min-width: 800px) {
-  .tema2_1section_2col {
+  .tema_1section_2col {
     display: grid;
     grid-template-columns: 1fr 1.5fr;
-    gap: 40px;
+    gap: 80px;
   }
 
   .tema_overskrift {
@@ -229,7 +225,6 @@ a {
 
   .temabeskrivelse {
     margin-top: 9rem;
-    padding-inline: 2rem;
   }
 }
 
