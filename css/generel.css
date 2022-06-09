@@ -7,7 +7,7 @@
 h1 {
   font-family: "Playfair Display SC", serif;
   color: black;
-  font-size: 3.5rem;
+  font-size: clamp(4rem, 10vw - 1.5rem, 6rem);
 }
 
 h2 {
@@ -15,7 +15,8 @@ h2 {
   color: var(--primary-color);
   font-weight: 500;
   margin-top: var(--space-xl);
-  margin-bottom: var(--space-md);
+  margin-bottom: var(--space-xxs);
+  font-size: 2rem;
 }
 
 h3 {
@@ -160,5 +161,4 @@ footer p {
   text-align: center;
   position: sticky;
   top: 100vh;
-  margin-top: 1.4rem;
 }

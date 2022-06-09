@@ -18,6 +18,7 @@
   text-align: center;
   font-style: italic;
   font-weight: 400;
+  font-size: 1.6rem;
 }
 
 @media (max-width: 700px) {
@@ -34,19 +35,87 @@
   margin-block: 0.6rem 2.5rem;
 }
 
-.grid_2col_ommig {
+/* .grid_2col_ommig {
   display: grid;
-  grid-template-columns: 3fr 1fr;
-  column-gap: 50px;
+  grid-template-columns: 1fr 3fr;
+  gap: 20px;
 }
 
 .border {
   border-right: 1px solid black;
-}
+  padding-right: 2rem;
+} */
 
 .sort_h2 {
   color: black;
   margin-bottom: 0rem;
+}
+
+/* OM MIG DESKTOP
+første sektion med billede og lille tekst, citat osv*/
+
+@media (min-width: 800px) {
+  .grid_2col_sec1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    margin-top: 3rem;
+  }
+
+  .img_place1 {
+    order: -1;
+    place-content: left;
+  }
+}
+
+@media (min-width: 1200px) {
+  .grid_2col_sec1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-inline: 12rem;
+    gap: 40px;
+  }
+
+  .img_place1 {
+    order: -1;
+    place-content: left;
+  }
+}
+
+/*OM MIG DESKTOP
+nederste sektioner med uddannelse, erhverv og kontakt*/
+/* @media (min-width: 800px) {
+  .grid_col2_ommig_desk {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    margin-top: 2rem;
+    gap: 20px;
+  }
+  .uddannelse_desktop {
+    font-size: 4rem;
+    text-align: center;
+  }
+
+  .grid_2col_ommig {
+    margin-top: 2rem;
+    font-size: 1.2rem;
+  }
+} */
+@media (min-width: 800px) {
+  .grid_2col_sec2_ommig {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    margin-top: 4rem;
+  }
+  .h2_stor_ommig {
+    font-size: clamp(1.5rem, 11.2vw - 3.4rem, 5rem);
+    text-align: end;
+  }
+
+  .margin_top {
+    margin-top: 1.5rem;
+  }
 }
 
 /*---------------MOBILEFIRST SLUUUUT---------------*/
@@ -88,56 +157,6 @@
   font-size: 1.4rem;
   color: #dbd5c9;
   border: solid 1px #dbd5c9;
-}
-
-/* OM MIG
-første sektion med billede og lille tekst, citat osv*/
-
-@media (min-width: 800px) {
-  .grid_2col_sec1 {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 40px;
-    margin-top: 3rem;
-  }
-
-  .img_place1 {
-    order: -1;
-    place-content: left;
-  }
-}
-
-@media (min-width: 1200px) {
-  .grid_2col_sec1 {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    margin-inline: 12rem;
-    gap: 40px;
-  }
-
-  .img_place1 {
-    order: -1;
-    place-content: left;
-  }
-}
-
-/*nederste sektioner med uddannelse, erhverv og kontakt*/
-@media (min-width: 800px) {
-  .grid_col2_ommig_desk {
-    display: grid;
-    grid-template-columns: auto auto;
-    margin-top: 2rem;
-    gap: 20px;
-  }
-  .uddannelse_desktop {
-    font-size: 4rem;
-    text-align: center;
-  }
-
-  .grid_2col_ommig {
-    margin-top: 2rem;
-    font-size: 1.2rem;
-  }
 }
 
 /*----------------PROJEKTER---------------*/
