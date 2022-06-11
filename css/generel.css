@@ -14,7 +14,6 @@ h2 {
   font-family: "Roboto", sans-serif;
   color: var(--primary-color);
   font-weight: 500;
-  margin-top: var(--space-xl);
   margin-bottom: var(--space-xxs);
   font-size: 2rem;
 }

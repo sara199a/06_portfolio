@@ -229,7 +229,7 @@ a {
 
 /*---------------TEMAEEEERRR---------------*/
 
-/*TEMA 2 - desktop*/
+/* Generelt for alle overordnede temabeskrivelser (tallet osv)*/
 
 @media (min-width: 800px) {
   .tema_1section_2col {
@@ -251,7 +251,67 @@ a {
   font-size: 17rem;
   color: var(--primary-color);
 }
-
 .tema_overskrift {
   margin-bottom: 1rem;
+}
+
+/*Generel knap til alle temaer her*/
+
+.calltoaction {
+  font-size: 0.9rem;
+  background-color: none;
+  border: solid 1px black;
+  padding: 0.2rem 1.2rem;
+  padding-top: 0.4rem;
+  color: black;
+  text-decoration: none;
+  text-align: center;
+}
+
+.calltoaction:hover {
+  background-color: #ff7530;
+  font-size: 1.4rem;
+  color: #dbd5c9;
+  border: solid 1px #dbd5c9;
+}
+
+.calltoaction_center {
+  text-align: center;
+  margin: 1.5rem;
+}
+
+/*Tema 02*/
+
+.tema_2section_3col {
+  border: 2px solid var(--primary-color);
+  padding: 2rem;
+  margin-block: 3rem;
+}
+
+@media (min-width: 800px) {
+  .tema_2section_3col {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: 7rem;
+    border: 2px solid var(--primary-color);
+    padding: 3 3 2 3rem;
+  }
+  .calltoaction_center {
+    text-align: center;
+    margin-top: 7rem;
+  }
+}
+
+@media (min-width: 800px) {
+  .proces_2col {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    margin-inline: 4rem;
+    margin-block: 8rem;
+  }
+  .proces_byt_plads {
+    order: -1;
+    max-width: 60%;
+  }
 }
