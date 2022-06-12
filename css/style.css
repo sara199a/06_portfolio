@@ -111,6 +111,7 @@ nederste sektioner med uddannelse, erhverv og kontakt*/
   .h2_stor_ommig {
     font-size: clamp(1.5rem, 11.2vw - 3.4rem, 5rem);
     text-align: end;
+    margin-top: 2rem;
   }
 
   .margin_top {
@@ -288,7 +289,7 @@ a {
   margin-block: 3rem;
 }
 
-@media (min-width: 800px) {
+@media (min-width: 1100px) {
   .tema_2section_3col {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -300,18 +301,20 @@ a {
     text-align: center;
     margin-top: 7rem;
   }
+  .img_opgavebeskrivelse {
+    padding-top: 2rem;
+  }
 }
 
 @media (min-width: 800px) {
   .proces_2col {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 60px;
-    margin-inline: 4rem;
-    margin-block: 8rem;
+    gap: 40px;
+    margin-inline: 6rem;
+    margin-block: 7rem;
   }
   .proces_byt_plads {
     order: -1;
-    max-width: 60%;
   }
 }
