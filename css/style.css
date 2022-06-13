@@ -75,7 +75,7 @@ så elementerne ikke ligger for højt oppe*/
 /*Kontakt skal styles med sort og den generelle regl fra h2 om margin fjernes*/
 .sort_h2 {
   color: black;
-  margin-bottom: 0rem;
+  padding-top: 0.8rem;
 }
 
 /*DESKTOPVERSION (om mig)*/
@@ -259,10 +259,12 @@ ellers ville blive for småt */
     text-align: center;
     margin-top: 8rem;
   }
-  /*billedet i opgavebeskrivelsen til højre rykkes lidt ned, så der er lige meget plads*/
-  .img_opgavebeskrivelse {
-    padding-top: 2rem;
-  }
+}
+
+/*billedet i opgavebeskrivelsen til højre rykkes lidt ned, så der er lige meget plads
+forbliver nede i mobilversion også, så knappen ikke ligger helt op af img*/
+.img_opgavebeskrivelse {
+  padding-top: 2rem;
 }
 /*Styling af section til opgavebeskrivelsen*/
 .tema_2section_3col {
@@ -293,7 +295,6 @@ ellers ville blive for småt */
 /*call to action cnap centreres ligeledes i mobilversion ude fra mediaquarien*/
 .calltoaction_center {
   text-align: center;
-  margin: 1.5rem;
 }
 
 /*--------------------------------------PROCESSEN - TEMAEEEERRR----------------------------------------------*/
@@ -323,4 +324,21 @@ ellers ville blive for småt */
   .calltoaction_knap2_tema05 {
     padding-top: 2rem;
   }
+}
+
+/*--------------------------KNAPPEN TIL AT GÅ VIDERE TIL NÆSTE SIDE STYLES-------------------*/
+
+.bladre_sider {
+  text-align: end;
+  margin-top: var(--space-xl);
+}
+
+.next_page {
+  color: black;
+  text-align: end;
+  font-family: "Roboto", sans-serif;
+}
+
+.next_page:hover {
+  border-bottom: 2px solid var(--primary-color);
 }

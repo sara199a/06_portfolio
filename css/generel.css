@@ -147,18 +147,3 @@ body {
     text-align: end;
   }
 }
-
-.bladre_sider {
-  text-align: end;
-  margin-top: var(--space-xl);
-}
-
-.next_page {
-  color: black;
-  text-align: end;
-  font-family: "Roboto", sans-serif;
-}
-
-.next_page:hover {
-  border-bottom: 2px solid var(--primary-color);
-}
