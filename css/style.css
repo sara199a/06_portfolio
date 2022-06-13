@@ -221,6 +221,7 @@ Grid på to kolonner til første section på alle temaer*/
     display: grid;
     grid-template-columns: 1fr 1.5fr;
     gap: 80px;
+    padding-bottom: 4rem;
   }
   /*regel for det store tal og tematitlen, f.eks. grundlæggende web, skal ligge til højre*/
   .tema_overskrift {
