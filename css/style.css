@@ -35,17 +35,6 @@
   margin-block: 0.6rem 2.5rem;
 }
 
-/* .grid_2col_ommig {
-  display: grid;
-  grid-template-columns: 1fr 3fr;
-  gap: 20px;
-}
-
-.border {
-  border-right: 1px solid black;
-  padding-right: 2rem;
-} */
-
 .sort_h2 {
   color: black;
   margin-bottom: 0rem;
@@ -82,25 +71,6 @@ første sektion med billede og lille tekst, citat osv*/
   }
 }
 
-/*OM MIG DESKTOP
-nederste sektioner med uddannelse, erhverv og kontakt*/
-/* @media (min-width: 800px) {
-  .grid_col2_ommig_desk {
-    display: grid;
-    grid-template-columns: 1.5fr 1fr;
-    margin-top: 2rem;
-    gap: 20px;
-  }
-  .uddannelse_desktop {
-    font-size: 4rem;
-    text-align: center;
-  }
-
-  .grid_2col_ommig {
-    margin-top: 2rem;
-    font-size: 1.2rem;
-  }
-} */
 @media (min-width: 800px) {
   .grid_2col_sec2_ommig {
     display: grid;
@@ -330,4 +300,4 @@ a {
 
 /* .video {
   max-width: 100%;
-} 
+} */

@@ -7,7 +7,7 @@
 h1 {
   font-family: "Playfair Display SC", serif;
   color: black;
-  font-size: clamp(4rem, 10vw - 1.5rem, 6rem);
+  font-size: clamp(4rem, 10vw - 1.5rem, 5.6rem);
 }
 
 h2 {
@@ -15,7 +15,7 @@ h2 {
   color: var(--primary-color);
   font-weight: 500;
   margin-bottom: var(--space-xxs);
-  font-size: 2rem;
+  font-size: 3rem;
 }
 
 h3 {
@@ -37,6 +37,13 @@ p {
 img,
 video {
   max-width: 100%;
+}
+
+/*FOOTER*/
+footer {
+  margin-top: 3rem;
+  text-align: center;
+  color: gray;
 }
 
 /*COSTUM VARIABLER*/
@@ -155,11 +162,4 @@ nav li {
     flex-flow: column;
     text-align: end;
   }
-}
-
-/*FOOTER*/
-footer p {
-  text-align: center;
-  position: sticky;
-  top: 100vh;
 }
