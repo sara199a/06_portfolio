@@ -212,7 +212,7 @@ a {
   font-size: 6rem;
 }
 
-/*---------------------------------------------TEMAEEEERRR---------------------------------------------------*/
+/*--------------------------------------TEMAEEEERRR FØRSTE SECTION----------------------------------------------*/
 
 /* Generelt for alle overordnede temabeskrivelser og det store tal med tematitlen under
 Grid på to kolonner til første section på alle temaer*/
@@ -222,26 +222,57 @@ Grid på to kolonner til første section på alle temaer*/
     grid-template-columns: 1fr 1.5fr;
     gap: 80px;
   }
-
+  /*regel for det store tal og tematitlen, f.eks. grundlæggende web, skal ligge til højre*/
   .tema_overskrift {
     text-align: end;
   }
-
+  /*Temabeskrivelse til højre for tallet er rykket ned, så det passer med kolonnen til venstre 
+med det store tal i*/
   .temabeskrivelse {
     margin-top: 9rem;
   }
 }
-
+/*Styling af stort tal i første section på hvert tema*/
 .tema_stort_tal {
   font-size: 17rem;
   color: var(--primary-color);
 }
+/*Styling af tematitel (den sorte skrift) i både desk og mobil*/
 .tema_overskrift {
   margin-bottom: 1rem;
 }
 
-/*Generel knap til alle temaer her*/
+/*--------------------------------------TEMAEEEERRR ANDEN SECTION----------------------------------------------*/
 
+/*grid med tre kolonner til opavebeskrivelsen. Mediaquary er så høj, fordi at billedet
+ellers ville blive for småt */
+@media (min-width: 1100px) {
+  .tema_2section_3col {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: 7rem;
+    border: 2px solid var(--primary-color);
+    padding: 3 3 2 3rem;
+  }
+  /*Læs mere knappen centreres i opgavebeskrivelsen*/
+  .calltoaction_center {
+    text-align: center;
+    margin-top: 8rem;
+  }
+  /*billedet i opgavebeskrivelsen til højre rykkes lidt ned, så der er lige meget plads*/
+  .img_opgavebeskrivelse {
+    padding-top: 2rem;
+  }
+}
+/*Styling af section til opgavebeskrivelsen*/
+.tema_2section_3col {
+  border: 2px solid var(--primary-color);
+  padding: 2rem;
+  margin-block: 3rem;
+}
+
+/*Generel call to action knap til alle temaer i opgavebeskrivelsen*/
+/*styling af knap*/
 .calltoaction {
   font-size: 0.9rem;
   background-color: none;
@@ -252,44 +283,21 @@ Grid på to kolonner til første section på alle temaer*/
   text-decoration: none;
   text-align: center;
 }
-
+/*styling af hovereffekt på knap*/
 .calltoaction:hover {
   background-color: #ff7530;
   font-size: 1.4rem;
   color: #dbd5c9;
   border: solid 1px #dbd5c9;
 }
-
+/*call to action cnap centreres ligeledes i mobilversion ude fra mediaquarien*/
 .calltoaction_center {
   text-align: center;
   margin: 1.5rem;
 }
 
-/*Tema 02*/
-
-.tema_2section_3col {
-  border: 2px solid var(--primary-color);
-  padding: 2rem;
-  margin-block: 3rem;
-}
-
-@media (min-width: 1100px) {
-  .tema_2section_3col {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    margin-top: 7rem;
-    border: 2px solid var(--primary-color);
-    padding: 3 3 2 3rem;
-  }
-  .calltoaction_center {
-    text-align: center;
-    margin-top: 8rem;
-  }
-  .img_opgavebeskrivelse {
-    padding-top: 2rem;
-  }
-}
-
+/*--------------------------------------PROCESSEN - TEMAEEEERRR----------------------------------------------*/
+/*Grid til processerne på de forskellige temaer*/
 @media (min-width: 800px) {
   .proces_2col {
     display: grid;
@@ -298,14 +306,19 @@ Grid på to kolonner til første section på alle temaer*/
     margin-inline: 6rem;
     margin-block: 7rem;
   }
+
+  /*for at skabe varation, ligger de forskellige faser forskudt af hinanden*/
   .proces_byt_plads {
     order: -1;
   }
+  /* desktopversion --> I tema 5 har vi to afleveringer, 
+  hvorfor en ekstra call to action knap er tilføjet her*/
   .calltoaction_knap2_tema05 {
     padding-top: 13rem;
   }
 }
 
+/*mobilversion*/
 @media (max-width: 1100px) {
   .calltoaction_knap2_tema05 {
     padding-top: 2rem;
