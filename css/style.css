@@ -1,48 +1,85 @@
-/*---------------MOBILEFIRST---------------*/
+/*------------------------------------------FORSIDE----------------------------------------------------------*/
+/*mobilversion*/
+/*Juster på placeringen af splashbillede og footeren i mobilversion, 
+så elementerne ikke ligger for højt oppe*/
 @media (max-width: 550px) {
   .splash {
-    padding-top: 6rem;
+    padding-top: 5rem;
   }
   footer {
-    margin-top: 8rem;
+    margin-top: 10rem;
   }
 }
 
-/*OMMIG*/
-.h1_topmargin {
+/*DESKTOPVERSION - forside*/
+/*placering af splash*/
+.splash {
+  display: grid;
+  place-content: center;
   margin-top: 2rem;
 }
 
+/*Styling af knapper på forsiden*/
+.knap_forside {
+  font-size: 0.9rem;
+  background-color: none;
+  border: solid 1px black;
+  padding: 0.2rem 1.2rem;
+  padding-top: 0.3rem;
+  color: black;
+  text-decoration: none;
+}
+/*Placering af knapper på forsiden*/
+.knap_grid {
+  display: grid;
+  place-content: end;
+  margin-block: 1rem;
+  padding-inline: 0.6rem;
+}
+/*Knapperne forskydes en lille smule, når skærmen bliver over 800 px*/
+@media (min-width: 800px) {
+  .knap_grid {
+    padding-inline: 7rem;
+  }
+}
+/*Hovereffekt på knapper på forsiden*/
+.knap_forside:hover {
+  background-color: #ff7530;
+  font-size: 1.4rem;
+  color: #dbd5c9;
+  border: solid 1px #dbd5c9;
+}
+
+/*-------------------------------------------OM MIG-----------------------------------------------------------*/
+/*MOBILVERSION*/
+/*Første overskrift på siden skubbes lidt ned*/
+.h1_topmargin {
+  margin-top: 2rem;
+}
+/*citatet under styles*/
 .citat {
   margin-block: 2rem;
   text-align: center;
   font-style: italic;
   font-weight: 400;
-  font-size: 1.6rem;
+  font-size: clamp(1.5rem, 0.8vw + 1rem, 1.6rem);
 }
 
+/*Portrætbilledet af mig skal rykke ud mod venstre i mobilversion*/
 @media (max-width: 700px) {
   .img_place {
     margin-left: -5rem;
   }
 }
 
-.p_topmargin {
-  margin-top: 1rem;
-}
-
-.p_top_buttom_margin {
-  margin-block: 0.6rem 2.5rem;
-}
-
+/*Kontakt skal styles med sort og den generelle regl fra h2 om margin fjernes*/
 .sort_h2 {
   color: black;
   margin-bottom: 0rem;
 }
 
-/* OM MIG DESKTOP
-første sektion med billede og lille tekst, citat osv*/
-
+/*DESKTOPVERSION (om mig)*/
+/*Grid til første section på om mig-siden*/
 @media (min-width: 800px) {
   .grid_2col_sec1 {
     display: grid;
@@ -56,7 +93,8 @@ første sektion med billede og lille tekst, citat osv*/
     place-content: left;
   }
 }
-
+/*Denne mediaquary er ligeledes lavet til første section, 
+fordi billedet blev for småt, hvis ikke den er her*/
 @media (min-width: 1200px) {
   .grid_2col_sec1 {
     display: grid;
@@ -71,6 +109,7 @@ første sektion med billede og lille tekst, citat osv*/
   }
 }
 
+/*Grid til anden section (uddannelse, kontakt osv.) på om mig-siden*/
 @media (min-width: 800px) {
   .grid_2col_sec2_ommig {
     display: grid;
@@ -78,62 +117,29 @@ første sektion med billede og lille tekst, citat osv*/
     gap: 60px;
     margin-top: 4rem;
   }
+  /*H2 styles større end den generelle H2-regel*/
   .h2_stor_ommig {
-    font-size: clamp(1.5rem, 11.2vw - 3.4rem, 5rem);
+    font-size: clamp(3rem, 13.3vw - 4.5rem, 5.5rem);
     text-align: end;
     margin-top: 2rem;
   }
 
+  /*En lille margin på KONTAKT i om mig siden, da den ellers ikke 
+  ville flugte med de andre H2'ere*/
   .margin_top {
     margin-top: 1.5rem;
   }
 }
 
-/*---------------MOBILEFIRST SLUUUUT---------------*/
-
-/*---------------DESKTOP---------------*/
-
-/*FORSIDE*/
-
-.splash {
-  display: grid;
-  place-content: center;
-  margin-top: 2rem;
-}
-.knap_forside {
-  font-size: 0.9rem;
-  background-color: none;
-  border: solid 1px black;
-  padding: 0.2rem 1.2rem;
-  padding-top: 0.3rem;
-  color: black;
-  text-decoration: none;
-}
-
-.knap_grid {
-  display: grid;
-  place-content: end;
-  margin-block: 1rem;
-  padding-inline: 0.6rem;
-}
-
-@media (min-width: 800px) {
-  .knap_grid {
-    padding-inline: 7rem;
-  }
-}
-
-.knap_forside:hover {
-  background-color: #ff7530;
-  font-size: 1.4rem;
-  color: #dbd5c9;
-  border: solid 1px #dbd5c9;
-}
-
-/*----------------PROJEKTER---------------*/
+/*-------------------------------------------PROJEKTER-----------------------------------------------------------*/
+/*Rykker h1 ind på linje med billederne i  mobilversion*/
 .h1_projekter {
   padding-block: 1.5rem;
 }
+
+/*Grid til de forskellige projekter.
+auto-fit = tilføjer så mange colums og rows, som den kan 
+Minmax = den må være minst 300px og 1fr betyder at den må være så stor, som den overhovedet kan blive*/
 @media (min-width: 750px) {
   .grid {
     display: grid;
@@ -143,65 +149,73 @@ første sektion med billede og lille tekst, citat osv*/
     padding-bottom: 2rem;
     gap: 20px;
   }
+  /*Rykker h1 ind på linje med billederne i  desktopversion*/
   .h1_projekter {
     padding: 2rem 0rem 0rem 7.4rem;
   }
 }
 
+/*Vigtig at have, da både img og text/content ligger inden i denne div/klasse --> derfor position relative
+Alt indhold ligger deri, men content+overlay bliver gemt, til når man hover over med musen
+Overflow hidden = hvis der er noget, som stikker ud af containeren bliver det gemt*/
 .img_wrapper {
   position: relative;
   overflow: hidden;
 }
 
+/*Tager fat i billedet i img_wrapper*/
 .img_wrapper > img {
-  /* display: block; */
-  width: 100%;
-  aspect-ratio: 1/1;
+  width: 100%; /*billedet skal fylde 100% af containeren*/
+  aspect-ratio: 1/1; /*Kvadratisk*/
   object-fit: cover;
   object-position: center;
 }
 
 .img_wrapper > .content {
   position: absolute;
-  inset: 0;
+  inset: 0; /*Gør at teksten ligger sig på selve billedet*/
   padding: 2rem;
-  padding-top: 5rem;
+  padding-top: 6rem;
   background: rgba(8, 11, 70, 0.7);
-  /*display: flex;*/
   text-align: center;
 }
 
+/*Giver både img og content den samme transition så det matcher*/
 .img_wrapper > img,
 .img_wrapper > .content {
   transition: 200ms ease-in-out;
 }
 
+/*Skjuler content ved at sige opaciti 0*/
 .img_wrapper > .content.fade {
   opacity: 0;
 }
 
+/*Når vi hover over vores img-wrapper, tager vi fat i content - og hvis content har 
+fade klassen skal den lave fade ind og ud animationen*/
 .img_wrapper:hover > .content.fade {
   opacity: 1;
 }
 
+/*Styling af a-tags i vores firkanter under projekter*/
 a {
   text-decoration: none;
   color: var(--primary-color);
   font-size: 1.2rem;
 }
-
+/*Styling af h2 i firkanterne under projekter*/
 .hover_h2 {
   font-size: 4rem;
 }
-
+/*endnu en hovereffekt på vores h2, når vi hover over den*/
 .hover_h2:hover {
   font-size: 6rem;
 }
 
-/*---------------TEMAEEEERRR---------------*/
+/*---------------------------------------------TEMAEEEERRR---------------------------------------------------*/
 
-/* Generelt for alle overordnede temabeskrivelser (tallet osv)*/
-
+/* Generelt for alle overordnede temabeskrivelser og det store tal med tematitlen under
+Grid på to kolonner til første section på alle temaer*/
 @media (min-width: 800px) {
   .tema_1section_2col {
     display: grid;
@@ -297,7 +311,3 @@ a {
     padding-top: 2rem;
   }
 }
-
-/* .video {
-  max-width: 100%;
-} */
