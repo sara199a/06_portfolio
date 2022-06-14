@@ -54,7 +54,7 @@ så elementerne ikke ligger for højt oppe*/
 /*MOBILVERSION*/
 /*Første overskrift på siden skubbes lidt ned*/
 .h1_topmargin {
-  margin-top: 2rem;
+  margin-top: 1rem;
 }
 /*citatet under styles*/
 .citat {
@@ -151,7 +151,7 @@ Minmax = den må være minst 300px og 1fr betyder at den må være så stor, som
   }
   /*Rykker h1 ind på linje med billederne i  desktopversion*/
   .h1_projekter {
-    padding: 2rem 0rem 0rem 7.4rem;
+    padding: 3rem 0rem 0rem 7.4rem;
   }
 }
 
