@@ -44,7 +44,7 @@ så elementerne ikke ligger for højt oppe*/
 }
 /*Hovereffekt på knapper på forsiden*/
 .knap_forside:hover {
-  background-color: #ff7530;
+  background-color: var(--primary-color);
   font-size: 1.4rem;
   color: #dbd5c9;
   border: solid 1px #dbd5c9;
@@ -288,7 +288,7 @@ forbliver nede i mobilversion også, så knappen ikke ligger helt op af img*/
 }
 /*styling af hovereffekt på knap*/
 .calltoaction:hover {
-  background-color: #ff7530;
+  background-color: var(--primary-color);
   font-size: 1.4rem;
   color: #dbd5c9;
   border: solid 1px #dbd5c9;
