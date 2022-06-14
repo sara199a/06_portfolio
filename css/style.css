@@ -235,6 +235,7 @@ med det store tal i*/
   font-size: 17rem;
   color: var(--primary-color);
 }
+
 /*Styling af tematitel (den sorte skrift) i både desk og mobil*/
 .tema_overskrift {
   margin-bottom: 1rem;
