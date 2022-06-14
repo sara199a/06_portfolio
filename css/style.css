@@ -22,7 +22,6 @@ så elementerne ikke ligger for højt oppe*/
 /*Styling af knapper på forsiden*/
 .knap_forside {
   font-size: 0.9rem;
-  background-color: none;
   border: solid 1px black;
   padding: 0.2rem 1.2rem;
   padding-top: 0.3rem;
@@ -90,7 +89,6 @@ så elementerne ikke ligger for højt oppe*/
 
   .img_place1 {
     order: -1;
-    place-content: left;
   }
 }
 /*Denne mediaquary er ligeledes lavet til første section, 
@@ -105,7 +103,6 @@ fordi billedet blev for småt, hvis ikke den er her*/
 
   .img_place1 {
     order: -1;
-    place-content: left;
   }
 }
 
@@ -253,7 +250,7 @@ ellers ville blive for småt */
     grid-template-columns: repeat(3, 1fr);
     margin-top: 7rem;
     border: 2px solid var(--primary-color);
-    padding: 3 3 2 3rem;
+    padding: 3rem 3rem 2rem 3rem;
   }
   /*Læs mere knappen centreres i opgavebeskrivelsen*/
   .calltoaction_center {
@@ -278,7 +275,6 @@ forbliver nede i mobilversion også, så knappen ikke ligger helt op af img*/
 /*styling af knap*/
 .calltoaction {
   font-size: 0.9rem;
-  background-color: none;
   border: solid 1px black;
   padding: 0.2rem 1.2rem;
   padding-top: 0.4rem;
