@@ -343,3 +343,10 @@ forbliver nede i mobilversion også, så knappen ikke ligger helt op af img*/
 .next_page:hover {
   border-bottom: 2px solid var(--primary-color);
 }
+
+/*--------------------------GRID TIL BILLEDER I HØJRE SIDE UNDER TEMA 06_PORTFOLIO-------------------------*/
+.img_grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 5px;
+}
